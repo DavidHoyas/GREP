@@ -31,7 +31,6 @@ public class Grep {
         return Runtime.getRuntime().exec(comando);
     }
 
-    // Escribir en el OutputStream
     public static void escribir(Process p, String contenido) throws Exception {
         OutputStream out = p.getOutputStream();
         PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
@@ -39,7 +38,6 @@ public class Grep {
         pw.close();
     }
 
-    // Leer el InputStream
     public static String leer(Process p) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
         StringBuilder sb = new StringBuilder();
