@@ -8,21 +8,21 @@ Proyecto en Java que demuestra cómo ejecutar procesos externos (el comando `gre
 
 ## Estructura del proyecto
 
-grep/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── es/etg/dam/
-│ │ │ └── Grep.java
-│ │ └── resources/
-│ └── test/
-│ └── java/
-│ └── es/etg/dam/
-│ └── GrepTest.java
-├── target/
-├── .gitignore
-├── pom.xml
-└── README.md
+```
+- grep
+  - src
+    - main
+      - java
+        - es/etg/dam
+          - Grep.java
+    - test
+      - java
+        - es/etg/dam
+          - GrepTest.java
+  - .gitignore
+  - pom.xml
+  - README.md
+```
 
 - `Grep.java`: clase principal que ejecuta `grep` sobre un texto predefinido y muestra las líneas que coinciden.  
 - `GrepTest.java`: pruebas unitarias que validan la ejecución de procesos, escritura y lectura de datos.
